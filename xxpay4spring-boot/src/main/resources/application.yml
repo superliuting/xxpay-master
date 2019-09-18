@@ -5,9 +5,9 @@ spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/xxpaydb?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&useSSL=false
-    username: xxpay
-    password: xxpay
+    url: jdbc:mysql://192.168.3.232:3306/xxpaydb?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&useSSL=false
+    username: root
+    password: 123456
     initialSize: 5    # 初始化大小
     minIdle: 5        # 最小
     maxActive: 20     # 最大
@@ -42,8 +42,8 @@ spring:
 
 config:
   ali:
-    notify_url: http://api.xxpay.org/notify/pay/aliPayNotifyRes.htm
-    return_url: http://www.xxpay.org
+    notify_url: https://weixin2.duoodoo.top/pay/goods/notify_alipay
+    return_url: http://www.baidu.com
   wx:
     certRootPath: /home/xxpay/service/cert
     notifyUrl: http://api.xxpay.org/notify/pay/wxPayNotifyRes.htm

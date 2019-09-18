@@ -54,6 +54,7 @@ public class ActiveMq4PayNotify extends Mq4PayNotify{
 	
 	@JmsListener(destination = PAY_NOTIFY_QUEUE_NAME)
 	public void onMessage(String msg) {
+        _log.info("收到演示消息:msg={}", msg);
 		receive(msg);
 	}
 

@@ -23,7 +23,7 @@
     <table>
         <tr>
             <td>购买商品</td>
-            <td class="fr">${goodsOrder.goodsName}</td>
+            <td class="fr">${payment.productName}</td>
         </tr>
         <tr>
             <td>收款方</td>

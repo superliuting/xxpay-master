@@ -52,7 +52,11 @@ public class AlipayConfig {
         this.setRsa_private_key(paramObj.getString("private_key"));
         this.setAlipay_public_key(paramObj.getString("alipay_public_key"));
         this.setIsSandbox(paramObj.getShortValue("isSandbox"));
-        if(this.getIsSandbox() == 1) this.setUrl("https://openapi.alipaydev.com/gateway.do");
+        if(this.getIsSandbox() == 1){
+            this.setUrl("https://openapi.alipaydev.com/gateway.do");
+        }else{
+            this.setUrl("https://openapi.alipay.com/gateway.do");
+        }
         return this;
     }
 
